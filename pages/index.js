@@ -29,12 +29,16 @@ export default function Home() {
                       title={product.name}
                     ></CardMedia>
                     <CardContent>
-                      <Typography>{product.name}</Typography>
+                      <Typography>
+                        <b>{product.name}</b>
+                      </Typography>
                     </CardContent>
                   </CardActionArea>
                 </NextLink>
                 <CardActions>
-                  <Typography>${product.price}</Typography>
+                  <Typography>
+                    <b>${product.price}</b>
+                  </Typography>
                   <Button size="small" color="primary">
                     Add to cart
                   </Button>
