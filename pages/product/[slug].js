@@ -24,7 +24,7 @@ export default function ProductScreen() {
     return <div>Product Not Found</div>;
   }
   return (
-    <Layout title={product.name}>
+    <Layout title={product.name} description={product.description}>
       <div className={classes.section}>
         <NextLink href="/" passHref>
           <Link>
@@ -47,7 +47,7 @@ export default function ProductScreen() {
         <Grid item md={3} xs={12}>
           <List>
             <ListItem>
-              <Typography>
+              <Typography component="h1" variant="h1">
                 <b>{product.name}</b>
               </Typography>
             </ListItem>
