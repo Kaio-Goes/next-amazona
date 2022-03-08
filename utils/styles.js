@@ -4,7 +4,7 @@ const useStyles = makeStyles({
   navbar: {
     backgroundColor: '#203040',
     '& a': {
-      color: '#ffff',
+      color: '#ffffff',
       marginLeft: 10,
     },
   },
@@ -25,6 +25,10 @@ const useStyles = makeStyles({
   section: {
     marginTop: 10,
     marginBottom: 10,
+  },
+  form: {
+    maxWidth: 800,
+    margin: '0 auto',
   },
 });
 export default useStyles;
